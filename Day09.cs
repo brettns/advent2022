@@ -35,9 +35,7 @@ class Day09 {
     }
 
     IEnumerable<Vec> GetNextMove() {
-        string[] lines = File.ReadAllLines(@"data\day09.txt");
-
-        foreach (var line in lines) {
+        foreach (var line in File.ReadLines(@"data\day09.txt")) {
             int count = int.Parse(line[2..]);
 
             for (int i = 0; i < count; i++) {
